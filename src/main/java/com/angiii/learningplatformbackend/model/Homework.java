@@ -14,7 +14,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Homework extends BaseEntity implements Serializable {
 
-    private String name; // 作业名称
+    private String title; // 作业标题
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH}, optional = false)
     @JoinColumn(name = "teacher_id")
     private Teacher teacher; // 所属教师

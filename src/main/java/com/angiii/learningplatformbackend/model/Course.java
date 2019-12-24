@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "t_course")
 @Builder
 @Data
-@ToString(callSuper = true)
+@ToString(callSuper = true, exclude = {"teachers", "majors", "homeworks"})
 @NoArgsConstructor
 @AllArgsConstructor
 public class Course extends BaseEntity implements Serializable {

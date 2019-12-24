@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "t_major")
 @Builder
 @Data
-@ToString(callSuper = true, exclude = {"courses"})
+@ToString(callSuper = true, exclude = "courses")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Major extends BaseEntity implements Serializable {
